@@ -1,0 +1,78 @@
+.awards-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1c2b; /* Dark background */
+  color: #e0e0e0;
+  padding: 20px;
+  gap: 20px;
+  text-align: start;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.award-card {
+  flex: 1;
+  min-width: 250px; /* Minimum card size */
+  max-width: 30%; /* Ensure cards don't stretch too much */
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.award-card:last-child {
+  border-right: none;
+}
+
+.award-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.award-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Hover Effect */
+.award-card:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .award-card {
+      max-width: 45%; /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .award-card {
+      max-width: 100%; /* Stack cards vertically */
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .award-card:last-child {
+      border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .award-logo {
+      font-size: 1rem; /* Smaller text for very small screens */
+  }
+
+  .award-description {
+      font-size: 0.8rem;
+  }
+}

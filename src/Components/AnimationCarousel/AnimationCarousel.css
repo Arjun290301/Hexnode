@@ -1,0 +1,49 @@
+.logo-carousel {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.logo-wrapper {
+    display: flex;
+    position: relative;
+    animation: slide 30s linear infinite;
+}
+
+.logo-slide {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Optional: Pause animation on hover */
+.logo-wrapper:hover {
+    animation-play-state: paused;
+}

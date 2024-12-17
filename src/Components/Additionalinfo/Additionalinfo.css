@@ -1,0 +1,119 @@
+/* General Section Styling */
+.kiosk-container {
+    background-color: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .kiosk-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Responsive wrap */
+    gap: 30px; /* Space between image and text */
+  }
+  
+  /* Left Image Section */
+  .kiosk-image-container {
+    position: relative;
+    max-width: 500px;
+    flex: 1 1 40%;
+  }
+  
+  .kiosk-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .kiosk-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .kiosk-badge::before {
+    content: "✔";
+    color: green;
+  }
+  
+  /* Right Text Section */
+  .kiosk-text-container {
+    flex: 1 1 50%;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .kiosk-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .kiosk-description {
+    font-size: 0.7rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .try-free-link {
+    font-size: 0.7rem;
+    color: #e50914;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .try-free-link:hover {
+    text-decoration: underline;
+  }
+  
+  .kiosk-features p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    margin: 0;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .kiosk-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .kiosk-text-container {
+      max-width: 100%;
+    }
+  
+    .kiosk-image-container {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .kiosk-heading {
+      font-size: 1.5rem;
+    }
+  
+    .kiosk-description,
+    .kiosk-features p {
+      font-size: 0.9rem;
+    }
+  }
+  

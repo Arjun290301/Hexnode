@@ -1,0 +1,105 @@
+/* ControlledCarousel.css */
+
+/* Component Background */
+.carousel-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #dddddd33; /* Light gray background */
+}
+.heading{
+    text-align: center;
+}
+.carousel-caption{ 
+    width: 50%;
+    margin-left: 200px;
+   
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+h5{
+    font-size: 16px;
+    color: black;
+
+}
+h3{
+    font-size: 12px;
+    color: black;
+
+}
+.pclss{
+    color: rgb(87, 87, 87);
+    font-size: 10px;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 253, 253);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative; /* Important for child positioning */
+}
+
+/* Carousel Buttons Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Always visible */
+    position: absolute; /* Position the buttons absolutely */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust alignment */
+}
+
+/* Button Icons (White Arrows) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    background-image: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(135deg); /* Left arrow */
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg); /* Right arrow */
+}
+.carousel-img{
+    border-radius: 4px;
+    width: 250px;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .carousel-caption{ 
+        width: 50%;
+        margin-top: 200px;
+       
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .carousel-comp{
+        display: flex;
+    }
+}

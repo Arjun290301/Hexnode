@@ -1,0 +1,21 @@
+.image-row {
+    display: flex;
+    justify-content: center; /* Centers the images */
+    gap: 20px; /* Adds space between images */
+    padding: 20px; /* Adds padding around the row */
+    flex-wrap: wrap; /* Ensures the row wraps if there isn't enough space */
+}
+
+.image-item {
+    width: 100px; /* Set a consistent width */
+    height: auto; /* Set a consistent height */
+    object-fit: cover; /* Ensures the images are properly cropped */
+    border-radius: 10px; /* Adds rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.image-item:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    cursor: pointer; /* Changes the cursor to a pointer */
+}

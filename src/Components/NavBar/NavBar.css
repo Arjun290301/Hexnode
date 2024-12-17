@@ -1,0 +1,73 @@
+/* NavBar.css */
+.nav {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Aligns it to the left edge */
+    width: 100%; /* Makes it span the entire width of the viewport */
+    z-index: 1000; /* Places it above other elements on the page */
+    background-color: rgb(2, 10, 25); /* Navbar background color */
+    transition: background-color 0.3s ease;
+    padding: 12px 40px; /* Adjusted padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-buttons {
+    margin-left: auto; /* Pushes buttons to the far right */
+    display: flex;
+    gap: 12px;
+}
+
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 60px;  /* Added extra padding within the container */
+}
+
+.logo {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+.nav.scrolled {
+    background-color: rgb(255, 255, 255); /* Darker background when scrolled */
+  
+  
+}
+
+
+
+.nav-btn {
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    padding: 6px 16px;
+    background-color: #DD0735;
+    border-radius: 2px;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #c20630;
+}
+
+.nav:hover {
+    background-color: white;
+}
