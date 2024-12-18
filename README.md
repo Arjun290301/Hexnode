@@ -31,8 +31,8 @@ Ensure the following are installed on your system:
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/repo-name.git
-2. cd repo-name
+   https://github.com/Arjun290301/Hexnode
+2. cd Hexnode
 3. npm install
 4. npm start
 # **Technologies Used**
